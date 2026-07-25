@@ -1,0 +1,55 @@
+                        DATA QUALITY SUMMARY REPORT
+
+  Project: Mutual Fund Data Analysis
+
+  INTRODUCTION: I assessed the quality of 10 mutual fund datasets.The analysis included      checking:              
+   - Dataset size (rows and columns)
+   - Data types
+   - Missing values
+   - Duplicate records
+    
+  KEY DATA QUALITY FINDINGS
+
+  1. Missing Value Analysis:
+      - 9 out of 10 datasets contain no missing values.
+      - Only the monthly SIP inflows dataset has missing values.
+      - The missing values are in the yoy_growth_pct column.
+      - These values are expected because YoY growth calculation requires previous year comparison data.
+  
+  2. Duplicate Record Analysis:
+     - We checked for duplicates in all datasets.
+     - No duplicate records were found.
+     - All datasets maintain unique records.
+
+  3. Data Type Analysis:
+     - Numeric columns such as NAV, AUM, investment amount, returns, and ratios are properly stored as numeric data types.
+     - Date columns are stored as strings and should be converted to the proper date format during preprocessing.
+
+  4. Data Consistency Analysis:
+     - Fund identifiers (amfi_code) are consistently available across related datasets.
+     - Investor transaction records have complete information.
+     - Scheme performance datasets include complete return and risk metrics.
+
+Conclusion:
+  
+The datasets are ready for further analysis, visualization, and dashboard development after minor preprocessing, like managing missing YoY growth values and standardizing date formats.
+
+
+AMFI CODE VALIDATION
+
+Objective:
+To verify that every AMFI code present in fund_master.csv exists in nav_history.csv.
+
+Result:
+- Total Unique AMFI Codes in fund_master : 40
+- Total Unique AMFI Codes in nav_history : 40
+- Missing AMFI Codes : 0
+
+Status: PASS
+
+Conclusion:
+- All AMFI codes in fund_master.csv are present in nav_history.csv.
+- No missing or unmatched AMFI codes were found.
+- The datasets can be safely joined using the amfi_code field.
+
+
