@@ -1,12 +1,4 @@
-
-
-
-
-
-
-
 # Fetch NAV for 5 key schemes: 
-
 
 import requests
 import pandas as pd
