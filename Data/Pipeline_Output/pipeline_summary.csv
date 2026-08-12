@@ -1,0 +1,11 @@
+dataset,input_file,original_rows,final_rows,original_columns,final_columns
+fund_master,clean_fund_master.csv,40,40,15,13
+nav_history,clean_nav_history.csv,46000,46000,3,4
+aum_fund_house,clean_aum_by_fund_house.csv,90,90,5,5
+monthly_sip_inflows,clean_monthly_sip_inflows.csv,48,48,6,6
+category_inflows,clean_category_inflows.csv,144,144,3,3
+industry_folio_count,clean_industry_folio_count.csv,21,21,8,8
+investor_transactions,clean_investor_transactions.csv,32778,32778,13,12
+scheme_performance,clean_scheme_performance.csv,40,40,19,18
+portfolio_holdings,clean_portfolio_holdings.csv,322,322,8,8
+benchmark_indices,clean_benchmark_indices.csv,8050,8050,3,3
